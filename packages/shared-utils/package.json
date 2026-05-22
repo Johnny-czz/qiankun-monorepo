@@ -1,0 +1,9 @@
+{
+  "name": "@demo/shared-utils",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "peerDependencies": {
+    "react": "^16.0.0 || ^18.0.0"
+  }
+}

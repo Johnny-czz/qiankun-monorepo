@@ -1,0 +1,12 @@
+# ./pnpm-workspace.yaml
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+# 将 overrides 从 package.json 迁移到这里
+overrides:
+  cheerio: 1.0.0-rc.12
+
+# 添加 allowBuilds 配置，解决 esbuild 警告
+allowBuilds:
+  esbuild: true

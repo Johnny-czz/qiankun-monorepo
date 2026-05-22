@@ -1,0 +1,13 @@
+{
+  "name": "react16-master-react18-slaves",
+  "private": true,
+  "scripts": {
+    "dev:master": "pnpm --filter master dev",
+    "dev:slave-webpack5": "pnpm --filter slave-webpack5 dev",
+    "dev:slave-vite": "pnpm --filter slave-vite dev",
+    "dev": "concurrently \"pnpm dev:master\" \"pnpm dev:slave-webpack5\" \"pnpm dev:slave-vite\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  }
+}
