@@ -1,4 +1,6 @@
 // 这里放置你想共享的工具函数
+export * from './utils';
+
 export const formatDate = (date) => {
     return new Date(date).toLocaleDateString();
 };

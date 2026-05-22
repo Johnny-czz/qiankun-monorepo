@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { renderWithQiankun, qiankunWindow } from 'vite-plugin-qiankun/dist/helper'; // 从指定路径导入
-import { formatDate } from '@demo/shared-utils'
+import { formatDate, add } from '@demo/shared-utils'
 import App from './App';
-
+console.log(add(1, 2))
 let root = null;
 
 function render(props) {
